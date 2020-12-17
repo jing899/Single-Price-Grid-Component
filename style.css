@@ -1,0 +1,117 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+#container {
+  background-color: white;
+  border-radius: 1.5%;
+  box-shadow: 2px 2px 18px hsl(197, 5%, 80%);
+  margin: 15vh auto auto;
+  width: 50vw;
+}
+
+#main-desc {
+  color: hsl(200, 3%, 61%);
+  padding: 4% 8%;
+}
+
+#main-title {
+  color: hsl(179, 62%, 43%);
+}
+
+#main-sub {
+  color: hsl(71, 73%, 54%);
+}
+
+#grid-container {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#mon-sub-box {
+  background-color: hsla(179, 62%, 44%, 0.89);
+  border-radius: 0 0 0 1.5%;
+  padding: 4% 0 4% 16%;
+}
+
+#mon-price {
+  font-size: 2rem;
+  padding-right: 2%;
+}
+
+#sign-up-button {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px hsl(192, 2%, 50%);
+  color: white;
+  font-weight: 600;
+  margin: 5% 0;
+  padding: 5% 0;
+  width: 80%;
+}
+
+#sign-up-button:hover {
+  background-color: hsl(71, 87%, 59%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reason-box {
+  background-color: hsla(179, 62%, 48%, 0.753);
+  border-radius: 0 0 1.5% 0;
+  padding: 4% 0 4% 16%;
+}
+
+#reason-box p,
+.mon-text {
+  color: hsl(204, 43%, 93%);
+  line-height: 1.3em;
+}
+
+.attribution{
+    font-size: 13px;
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(179, 62%, 43%);
+    text-decoration: none;
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+/* ------- mobile version ------- */
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+  #container {
+    width: 100vw;
+    margin: 0;
+  }
+
+  #grid-container {
+    display: inline;
+  }
+
+  #mon-sub-box {
+    border-radius: 0;
+    padding: 4% 0 4% 8%;
+  }
+
+  #reason-box {
+    border-radius: 0;
+    padding: 4% 0 4% 8%;
+  }
+
+  #sign-up-button {
+    width: 90%;
+  }
+}
